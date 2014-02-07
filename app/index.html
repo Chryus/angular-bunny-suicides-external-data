@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bunApp">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Bunny Suicides :(</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="http://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet" type="tex/css">
+    <link href="css/app.css" rel="stylesheet"/>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="js/controllers.js"></script>
+  </head>
+   <body ng-controller="BunListCtrl">
+    <div class="container-fluid">
+      <div class="billions"></div>
+<!--       <img src="img/bun.jpg"/> -->
+      <div class="jumbo">  
+        <h1>Bun suicides</h1>
+      </div>
+      <div class="cat-container container">
+        <ul>
+          <li ng-repeat="bun in bunnies | filter:query | orderBy:orderProp" class="bunny">
+            <img ng-src="img/bunnies/{{bun.name}}.jpg"/>
+            <div class="info">
+                <h3>{{bun.name}}</h3>
+                <p>{{bun.bio}}</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
