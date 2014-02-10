@@ -4,10 +4,23 @@ body {
 }
 
 h1 {
-  color: lightblue;
-  text-shadow: 2px 2px 0 deepskyblue;
+  color: #E80C7A;
+  text-shadow: 2px 2px 0 lightpink;
   font-family: "Abril Fatface", serif;
   font-size: 64px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.circular {
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  background: url(http://link-to-your/image.jpg) no-repeat;
 }
 
 .jumbo {
@@ -74,6 +87,7 @@ h1 {
   z-index: -1;
   background: transparent url('../img/bun.jpg') no-repeat 1% 1%;
   opacity: 0.2;
+  border-radius: 150px, 150px, 150px, 150px;
   -moz-animation: rotate 40s ease-in-out 0s infinite;
   -webkit-animation: vortex 40s ease-in-out 0s infinite;
   animation: vortex 40s ease-in-out 0s infinite ;
